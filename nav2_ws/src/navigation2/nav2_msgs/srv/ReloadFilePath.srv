@@ -1,0 +1,4 @@
+string graph_filepath
+---
+bool success
+

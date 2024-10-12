@@ -1,0 +1,7 @@
+# Node information message
+int32 unfinished_node_id
+int32 finished_node_id
+int32 present_edge_id
+int32 target_node_id
+float32 closest_pt_on_edge_x
+float32 closest_pt_on_edge_y

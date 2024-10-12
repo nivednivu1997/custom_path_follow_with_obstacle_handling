@@ -1,0 +1,13 @@
+<root main_tree_to_execute="MainTree">
+  <BehaviorTree ID="MainTree">
+    <PipelineSequence name="NavigateWithoutReplanning">
+      <Sequence name="ComputePathAndFollow">
+        <!-- Compute the path to the goal once, without periodic replanning -->
+        <ComputePathToPose goal="{goal}" path="{path}" planner_id="GridBased" error_code_id="{compute_path_error_code}"/>
+        <!-- Follow the computed path -->
+        <FollowPath path="{path}" controller_id="FollowPath" error_code_id="{follow_path_error_code}"/>
+      </Sequence>
+    </PipelineSequence>
+  </BehaviorTree>
+</root>
+
