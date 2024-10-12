@@ -10,7 +10,8 @@ While the robot is following the path it should not replan at any cost but shoul
 Steps to recreate
 1. git clone Repo
 2. colcon build
-3. cd nav2_ws && source install/setup.bash && ros2 launch nav2_simple_commander route_example_launch.py 
+3. cd nav2_ws && source install/setup.bash && ros2 launch nav2_simple_commander route_example[Screencast from 10-12-2024 05_50_29 PM_trimmed.webm](https://github.com/user-attachments/assets/e648d06b-ac64-4ccb-aec0-8a127be798cd)
+_launch.py 
 4. cd nav2_ws && source install/setup.bash && ros2 launch nav2_bringup localization_launch.py 
 5. cd nav2_ws && source install/setup.bash && ros2 launch nav2_bringup navigation_launch.py 
 6. cd nav2_ws && source install/setup.bash && ros2 launch nav2_collision_monitor collision_monitor_node.launch.py 
